@@ -10,4 +10,9 @@
 
 @interface CircleView : UIView
 
+@property(nonatomic,strong) UIGravityBehavior *g;
+@property (nonatomic,strong)UICollisionBehavior *c;
+@property (nonatomic,strong)UIDynamicAnimator *animator;
+@property (nonatomic,strong)UIDynamicItemBehavior * i;
+
 @end

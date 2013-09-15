@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0405405617E3C2BA00E165B0 /* CMMotionManager+Shared.m in Sources */ = {isa = PBXBuildFile; fileRef = 0405405517E3C2BA00E165B0 /* CMMotionManager+Shared.m */; };
+		04111BB817E2BFF4006AA53B /* Reveal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04111BB717E2BFF4006AA53B /* Reveal.framework */; };
+		041AFE0F17E4F2EB0045C0DE /* bubble_image.png in Resources */ = {isa = PBXBuildFile; fileRef = 041AFE0E17E4F2EB0045C0DE /* bubble_image.png */; };
 		0437A21517E2573500DF1E0B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0437A21417E2573500DF1E0B /* Foundation.framework */; };
 		0437A21717E2573500DF1E0B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0437A21617E2573500DF1E0B /* CoreGraphics.framework */; };
 		0437A21917E2573500DF1E0B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0437A21817E2573500DF1E0B /* UIKit.framework */; };
@@ -22,6 +25,8 @@
 		0437A23917E2573500DF1E0B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0437A21817E2573500DF1E0B /* UIKit.framework */; };
 		0437A24117E2573500DF1E0B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0437A23F17E2573500DF1E0B /* InfoPlist.strings */; };
 		0437A24317E2573500DF1E0B /* bubblesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0437A24217E2573500DF1E0B /* bubblesTests.m */; };
+		0437A24E17E2584D00DF1E0B /* CircleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0437A24D17E2584D00DF1E0B /* CircleView.m */; };
+		0437A25117E2660500DF1E0B /* UIColor+PickRandomColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 0437A25017E2660500DF1E0B /* UIColor+PickRandomColor.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +40,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0405405417E3C2BA00E165B0 /* CMMotionManager+Shared.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CMMotionManager+Shared.h"; sourceTree = "<group>"; };
+		0405405517E3C2BA00E165B0 /* CMMotionManager+Shared.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CMMotionManager+Shared.m"; sourceTree = "<group>"; };
+		04111BB717E2BFF4006AA53B /* Reveal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Reveal.framework; sourceTree = "<group>"; };
+		041AFE0E17E4F2EB0045C0DE /* bubble_image.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bubble_image.png; sourceTree = "<group>"; };
 		0437A21117E2573500DF1E0B /* bubbles.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = bubbles.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0437A21417E2573500DF1E0B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		0437A21617E2573500DF1E0B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -55,6 +64,10 @@
 		0437A23E17E2573500DF1E0B /* bubblesTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "bubblesTests-Info.plist"; sourceTree = "<group>"; };
 		0437A24017E2573500DF1E0B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		0437A24217E2573500DF1E0B /* bubblesTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = bubblesTests.m; sourceTree = "<group>"; };
+		0437A24C17E2584D00DF1E0B /* CircleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CircleView.h; sourceTree = "<group>"; };
+		0437A24D17E2584D00DF1E0B /* CircleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CircleView.m; sourceTree = "<group>"; };
+		0437A24F17E2660500DF1E0B /* UIColor+PickRandomColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+PickRandomColor.h"; sourceTree = "<group>"; };
+		0437A25017E2660500DF1E0B /* UIColor+PickRandomColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+PickRandomColor.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +78,7 @@
 				0437A21717E2573500DF1E0B /* CoreGraphics.framework in Frameworks */,
 				0437A21917E2573500DF1E0B /* UIKit.framework in Frameworks */,
 				0437A21517E2573500DF1E0B /* Foundation.framework in Frameworks */,
+				04111BB817E2BFF4006AA53B /* Reveal.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -103,6 +117,7 @@
 		0437A21317E2573500DF1E0B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				04111BB717E2BFF4006AA53B /* Reveal.framework */,
 				0437A21417E2573500DF1E0B /* Foundation.framework */,
 				0437A21617E2573500DF1E0B /* CoreGraphics.framework */,
 				0437A21817E2573500DF1E0B /* UIKit.framework */,
@@ -114,14 +129,21 @@
 		0437A21A17E2573500DF1E0B /* bubbles */ = {
 			isa = PBXGroup;
 			children = (
+				041AFE0E17E4F2EB0045C0DE /* bubble_image.png */,
 				0437A22317E2573500DF1E0B /* AppDelegate.h */,
 				0437A22417E2573500DF1E0B /* AppDelegate.m */,
 				0437A22617E2573500DF1E0B /* Main_iPhone.storyboard */,
 				0437A22917E2573500DF1E0B /* Main_iPad.storyboard */,
 				0437A22C17E2573500DF1E0B /* ViewController.h */,
 				0437A22D17E2573500DF1E0B /* ViewController.m */,
+				0437A24C17E2584D00DF1E0B /* CircleView.h */,
+				0437A24D17E2584D00DF1E0B /* CircleView.m */,
+				0437A24F17E2660500DF1E0B /* UIColor+PickRandomColor.h */,
+				0437A25017E2660500DF1E0B /* UIColor+PickRandomColor.m */,
 				0437A22F17E2573500DF1E0B /* Images.xcassets */,
 				0437A21B17E2573500DF1E0B /* Supporting Files */,
+				0405405417E3C2BA00E165B0 /* CMMotionManager+Shared.h */,
+				0405405517E3C2BA00E165B0 /* CMMotionManager+Shared.m */,
 			);
 			path = bubbles;
 			sourceTree = "<group>";
@@ -202,6 +224,9 @@
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = "MEGHA GULATI";
 				TargetAttributes = {
+					0437A21017E2573500DF1E0B = {
+						DevelopmentTeam = ZN6RKJ4A87;
+					};
 					0437A23417E2573500DF1E0B = {
 						TestTargetID = 0437A21017E2573500DF1E0B;
 					};
@@ -234,6 +259,7 @@
 				0437A22B17E2573500DF1E0B /* Main_iPad.storyboard in Resources */,
 				0437A23017E2573500DF1E0B /* Images.xcassets in Resources */,
 				0437A22817E2573500DF1E0B /* Main_iPhone.storyboard in Resources */,
+				041AFE0F17E4F2EB0045C0DE /* bubble_image.png in Resources */,
 				0437A21F17E2573500DF1E0B /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -253,9 +279,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0437A24E17E2584D00DF1E0B /* CircleView.m in Sources */,
 				0437A22E17E2573500DF1E0B /* ViewController.m in Sources */,
 				0437A22517E2573500DF1E0B /* AppDelegate.m in Sources */,
 				0437A22117E2573500DF1E0B /* main.m in Sources */,
+				0437A25117E2660500DF1E0B /* UIColor+PickRandomColor.m in Sources */,
+				0405405617E3C2BA00E165B0 /* CMMotionManager+Shared.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -392,9 +421,18 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Megha Gulati (S8L7L4PVGP)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Megha Gulati (S8L7L4PVGP)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/meghagulati/Desktop/Reveal.app/Contents/SharedSupport/iOS-Libraries",
+					/Users/meghagulati/project/bubbles,
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "bubbles/bubbles-Prefix.pch";
 				INFOPLIST_FILE = "bubbles/bubbles-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -405,9 +443,17 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/meghagulati/Desktop/Reveal.app/Contents/SharedSupport/iOS-Libraries",
+					/Users/meghagulati/project/bubbles,
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "bubbles/bubbles-Prefix.pch";
 				INFOPLIST_FILE = "bubbles/bubbles-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -474,6 +520,7 @@
 				0437A24817E2573500DF1E0B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0437A24917E2573500DF1E0B /* Build configuration list for PBXNativeTarget "bubblesTests" */ = {
 			isa = XCConfigurationList;
@@ -482,6 +529,7 @@
 				0437A24B17E2573500DF1E0B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

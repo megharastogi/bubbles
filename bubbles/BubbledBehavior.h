@@ -9,5 +9,9 @@
 #import <UIKit/UIKit.h>
 
 @interface BubbledBehavior : UIDynamicBehavior
+- (instancetype)initWithItems:(NSArray*)items animator:(UIDynamicAnimator *)animator;
+@property(nonatomic,strong) UIGravityBehavior * g;
+@property(nonatomic,strong) UICollisionBehavior * c;
+@property(nonatomic,strong) UIDynamicItemBehavior * i;
 
 @end

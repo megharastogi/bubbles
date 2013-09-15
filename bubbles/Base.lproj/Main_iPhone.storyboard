@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4510" systemVersion="12E55" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4510" systemVersion="12E55" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="vXZ-lx-hvc">
     <dependencies>
+        <deployment defaultVersion="1792" identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3742"/>
     </dependencies>
     <scenes>
@@ -8,28 +9,33 @@
         <scene sceneID="ufC-wZ-h7g">
             <objects>
                 <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="YsN-pA-5c8"/>
-                        <viewControllerLayoutGuide type="bottom" id="5nA-UD-yE3"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                    <view key="view" autoresizesSubviews="NO" contentMode="scaleToFill" id="kh9-bI-dsS">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HnZ-7D-DHL" customClass="CircleView">
-                                <rect key="frame" x="37" y="40" width="100" height="100"/>
+                            <view contentMode="scaleToFill" id="HnZ-7D-DHL" customClass="CircleView">
+                                <rect key="frame" x="85" y="13" width="124" height="124"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" red="0.577635421831459" green="1" blue="0.84647584846390933" alpha="1" colorSpace="calibratedRGB"/>
+                                <gestureRecognizers/>
                             </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="i3c-zV-FDO" customClass="CircleView">
-                                <rect key="frame" x="37" y="179" width="100" height="100"/>
+                            <view contentMode="scaleToFill" id="C4w-NL-xIs" customClass="CircleView">
+                                <rect key="frame" x="98" y="317" width="124" height="124"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" red="0.57763542180000005" green="1" blue="0.84647584850000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <gestureRecognizers/>
                             </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hpH-OO-jJY" customClass="CircleView">
-                                <rect key="frame" x="165" y="112" width="100" height="100"/>
+                            <view contentMode="scaleToFill" id="9Nl-Yv-4K6" customClass="CircleView">
+                                <rect key="frame" x="153" y="171" width="124" height="124"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" red="0.57763542180000005" green="1" blue="0.84647584850000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <gestureRecognizers/>
+                            </view>
+                            <view contentMode="scaleToFill" id="wub-Ha-03A" customClass="CircleView">
+                                <rect key="frame" x="9" y="178" width="124" height="124"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" red="0.57763542180000005" green="1" blue="0.84647584850000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <gestureRecognizers/>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -37,6 +43,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="137" y="133"/>
         </scene>
     </scenes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
