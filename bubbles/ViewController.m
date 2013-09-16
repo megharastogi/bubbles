@@ -37,6 +37,7 @@
     }
     circleViews = cv;
     
+    //Adding Gravity and Collision behavior   
     [self addAnimation];
     
 }

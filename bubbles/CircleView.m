@@ -50,7 +50,7 @@
         
     }
     
-    //Add animation
+    //Add Gravity and Collision behavior for samller circles
     [self addAnimation];
 
     
