@@ -10,5 +10,5 @@
 #import <CoreMotion/CoreMotion.h>
 
 @interface ViewController : UIViewController
-
+- (IBAction)createNewBubble;
 @end

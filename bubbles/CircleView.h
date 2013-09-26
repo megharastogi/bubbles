@@ -15,4 +15,10 @@
 @property (nonatomic,strong)UIDynamicAnimator *animator;
 @property (nonatomic,strong)UIDynamicItemBehavior * i;
 
+@property (nonatomic, assign) NSInteger originalIndex;
+
+
+-(void) pickUp;
+-(void) drop;
+
 @end

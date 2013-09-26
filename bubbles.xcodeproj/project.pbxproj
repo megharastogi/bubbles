@@ -27,6 +27,8 @@
 		0437A24317E2573500DF1E0B /* bubblesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0437A24217E2573500DF1E0B /* bubblesTests.m */; };
 		0437A24E17E2584D00DF1E0B /* CircleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0437A24D17E2584D00DF1E0B /* CircleView.m */; };
 		0437A25117E2660500DF1E0B /* UIColor+PickRandomColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 0437A25017E2660500DF1E0B /* UIColor+PickRandomColor.m */; };
+		047D7C9C17F4C6110072B7A4 /* MultipeerConnectivity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 047D7C9B17F4C6110072B7A4 /* MultipeerConnectivity.framework */; };
+		047D7C9F17F4C6610072B7A4 /* BluetoothManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 047D7C9E17F4C6610072B7A4 /* BluetoothManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +70,9 @@
 		0437A24D17E2584D00DF1E0B /* CircleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CircleView.m; sourceTree = "<group>"; };
 		0437A24F17E2660500DF1E0B /* UIColor+PickRandomColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+PickRandomColor.h"; sourceTree = "<group>"; };
 		0437A25017E2660500DF1E0B /* UIColor+PickRandomColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+PickRandomColor.m"; sourceTree = "<group>"; };
+		047D7C9B17F4C6110072B7A4 /* MultipeerConnectivity.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MultipeerConnectivity.framework; path = System/Library/Frameworks/MultipeerConnectivity.framework; sourceTree = SDKROOT; };
+		047D7C9D17F4C6610072B7A4 /* BluetoothManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BluetoothManager.h; sourceTree = "<group>"; };
+		047D7C9E17F4C6610072B7A4 /* BluetoothManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BluetoothManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +80,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				047D7C9C17F4C6110072B7A4 /* MultipeerConnectivity.framework in Frameworks */,
 				0437A21717E2573500DF1E0B /* CoreGraphics.framework in Frameworks */,
 				0437A21917E2573500DF1E0B /* UIKit.framework in Frameworks */,
 				0437A21517E2573500DF1E0B /* Foundation.framework in Frameworks */,
@@ -117,6 +123,7 @@
 		0437A21317E2573500DF1E0B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				047D7C9B17F4C6110072B7A4 /* MultipeerConnectivity.framework */,
 				04111BB717E2BFF4006AA53B /* Reveal.framework */,
 				0437A21417E2573500DF1E0B /* Foundation.framework */,
 				0437A21617E2573500DF1E0B /* CoreGraphics.framework */,
@@ -144,6 +151,8 @@
 				0437A21B17E2573500DF1E0B /* Supporting Files */,
 				0405405417E3C2BA00E165B0 /* CMMotionManager+Shared.h */,
 				0405405517E3C2BA00E165B0 /* CMMotionManager+Shared.m */,
+				047D7C9D17F4C6610072B7A4 /* BluetoothManager.h */,
+				047D7C9E17F4C6610072B7A4 /* BluetoothManager.m */,
 			);
 			path = bubbles;
 			sourceTree = "<group>";
@@ -282,6 +291,7 @@
 				0437A24E17E2584D00DF1E0B /* CircleView.m in Sources */,
 				0437A22E17E2573500DF1E0B /* ViewController.m in Sources */,
 				0437A22517E2573500DF1E0B /* AppDelegate.m in Sources */,
+				047D7C9F17F4C6610072B7A4 /* BluetoothManager.m in Sources */,
 				0437A22117E2573500DF1E0B /* main.m in Sources */,
 				0437A25117E2660500DF1E0B /* UIColor+PickRandomColor.m in Sources */,
 				0405405617E3C2BA00E165B0 /* CMMotionManager+Shared.m in Sources */,

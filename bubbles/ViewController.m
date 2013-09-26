@@ -10,6 +10,7 @@
 #import "CircleView.h"
 #import "UIColor+PickRandomColor.h"
 #import "CMMotionManager+Shared.h"
+#import "BluetoothManager.h"
 
 @interface ViewController () 
 {
@@ -30,15 +31,24 @@
 	// Do any additional setup after loading the view, typically from a nib.
     
     NSMutableArray *cv = [NSMutableArray new];
-    for( UIView *view in self.view.subviews ) {
-        if( [view isKindOfClass:[CircleView class]] ) {
+    NSInteger i = 0;
+    for( CircleView *view in self.view.subviews ) {
+        view.originalIndex = i;
             [cv addObject:view];
-        }
+        i = i + 1;
     }
     circleViews = cv;
     
-    //Adding Gravity and Collision behavior   
-    [self addAnimation];
+    [BluetoothManager instance];
+
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(bluetoothDataReceived:)
+                                                 name:@"bluetoothDataReceived"
+                                               object:nil];
+
+    //Adding Gravity and Collision behavior
+//    [self addAnimation];
     
 }
 
@@ -93,6 +103,103 @@
 }
 
 
+-(void) bluetoothDataReceived:(NSNotification*)note
 
+{
+    
+    NSLog(@"reciving data");
+    
+    [[NSOperationQueue mainQueue] addOperationWithBlock:^{
+        NSDictionary *dict = [note object];
+        NSInteger command = [dict[@"command"] intValue];
+        switch( command ) {
+            case BluetoothCommandPickUp:
+            {
+                
+                NSLog(@"pick data");
+
+                NSInteger viewNumber = [dict[@"viewNumber"] intValue];
+                CircleView *bubble = self.view.subviews[viewNumber];
+                if( [bubble isKindOfClass:[CircleView class]] )
+                    [bubble pickUp];
+                break;
+            }
+            case BluetoothCommandDrop:
+            {
+                NSLog(@"drop data");
+
+                NSInteger viewNumber = [dict[@"viewNumber"] intValue];
+                CircleView *bubble = self.view.subviews[viewNumber];
+                if( [bubble isKindOfClass:[CircleView class]] )
+                    [bubble drop];
+                break;
+            }
+            case BluetoothCommandMove:
+            {
+                NSInteger viewNumber = [dict[@"viewNumber"] intValue];
+                CircleView *bubble = self.view.subviews[viewNumber];
+                if( [bubble isKindOfClass:[CircleView class]] )
+                    bubble.center = [dict[@"newCenter"] CGPointValue];
+            }
+            case BluetoothCommandPop:
+            {
+                NSLog(@"Pop");
+                
+                NSInteger viewNumber = [dict[@"viewNumber"] intValue];
+                CircleView *bubble = self.view.subviews[viewNumber];
+                if( [bubble isKindOfClass:[CircleView class]] )
+                    [bubble removeFromSuperview];
+                
+                break;
+            }
+                
+            case BluetoothCommandCreateNew:
+            {
+                NSLog(@"Create");
+                NSInteger i;
+                
+                i = [self.view.subviews count] + 1;
+                
+                CGRect frame;
+                frame.origin.x = 10;
+                frame.origin.y = 10;
+                frame.size.width = 124.;
+                frame.size.height = 124.;
+                CircleView *v = [[CircleView alloc] initWithFrame:frame];
+                v.layer.cornerRadius = 62;
+                v.backgroundColor = [UIColor pickRandomColor];
+                [self.view addSubview:v];
+                            
+
+                break;
+            }
+
+
+        }
+    }];
+}
+
+- (IBAction)createNewBubble
+{
+
+        NSInteger i;
+
+        i = [self.view.subviews count] + 1;
+        
+        CGRect frame;
+        frame.origin.x = 10;
+        frame.origin.y = 10;
+        frame.size.width = 124.;
+        frame.size.height = 124.;
+        CircleView *v = [[CircleView alloc] initWithFrame:frame];
+        v.layer.cornerRadius = 62;
+        v.backgroundColor = [UIColor pickRandomColor];
+        [self.view addSubview:v];
+        
+    NSDictionary *dict = @{@"command": @(BluetoothCommandCreateNew)};
+    
+        [[BluetoothManager instance] sendDictionaryToPeers:dict];
+
+}
 
 @end
